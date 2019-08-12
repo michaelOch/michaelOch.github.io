@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script>
+        function validateFields() {
+            if (document.getElementById('firstName').value !== '' && document.getElementById('lastName').value !== '') {
+                let firstname = document.getElementById('firstName').value;
+                let lastname = document.getElementById('lastName').value;
+
+                if (document.getElementById('email').value !== '') {
+                    let email = document.getElementById('email').value;
+
+                    if (document.myForm.gender.value !== '') {
+                        let gender = document.myForm.gender.value;
+
+                        let level = document.getElementById('level').value;
+                        let html, css, javascript, python, java, cplus;
+                        document.myForm.html.checked ? html = document.myForm.html.value : html = '';
+                        document.myForm.css.checked ? css = document.myForm.css.value : css = '';
+                        document.myForm.javascript.checked ? javascript = document.myForm.javascript.value : javascript = '';
+                        document.myForm.python.checked ? python = document.myForm.python.value : python = '';
+                        document.myForm.java.checked ? java = document.myForm.java.value : java = '';
+                        document.myForm.cplus.checked ? cplus = document.myForm.cplus.value : cplus = '';
+                        alert(`Successfully submitted!
+                            \nFirst Name:    ${firstname}
+                            \nLast Name:    ${lastname}
+                            \nEmail:    ${email}
+                            \nGender:   ${gender}
+                            \nProgramming Level:    ${level}
+                            \nSkill:    ${html} ${css} ${javascript} ${python} ${java} ${cplus}`);
+                    } else {
+                        alert('Indicate your gender!');
+                        return false;
+                    }
+                } else {
+                    alert('Please provide your email!');
+                    document.myForm.email.focus();
+                    return false;
+                }
+            } else {
+                alert('Please provide your first name and last name!');
+                document.myForm.firstname.focus();
+                return false;
+            }
+        }
+    </script>
+
+    <title>FORM</title>
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST" action="" name="myForm" onsubmit="return validateFields()" role="form" id="custom-form">
+            <h3 style="text-align: center" class="custom-text">REGISTER</h3>
+            <div class="form-group">
+                <label class="custom-text">First Name:</label>
+                <input type="text" name="firstname" class="form-control custom-width" id="firstName" placeholder="John">
+            </div>
+
+            <div class="form-group">
+                <label class="custom-text">Last Name:</label>
+                <input type="text" name="lastname" class="form-control custom-width" id="lastName" placeholder="Doe">
+            </div>
+
+            <div class="form-group">
+                <label class="custom-text">Email:</label>
+                <input type="text" name="email" class="form-control custom-width" id="email" placeholder="abc@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label class="custom-text">Gender:</label>
+                <input type="radio" name="gender" value="male"> Male &nbsp;
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label class="custom-text">Programming Level:</label>
+                <select class="form-control custom-width" id="level">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Professional</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="custom-text">Skill:</label>
+                <input type="checkbox" name="html" value="HTML"> HTML &nbsp; &nbsp;
+                <input type="checkbox" name="css" value="CSS"> CSS
+                <br>
+                <input type="checkbox" name="javascript" value="Javascript"> Javascript &nbsp;
+                <input type="checkbox" name="python" value="Python"> Python
+                <br>
+                <input type="checkbox" name="java" value="Java"> Java &nbsp;
+                <input type="checkbox" name="cplus" value="C++"> C++
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

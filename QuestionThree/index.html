@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CAFE</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top transparent">
+
+        <div class="container">
+            <div style="text-align: center; padding-top:5px">
+                <!-- Social media icons -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <i class="fa fa-phone" aria-hidden="true">+2348165554342</i>
+            </div>
+
+            <a href="index.html" class="brand"><img src="images/logo.png" alt="" title="" /></a>
+
+            <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <div class="collapse nav-collapse">
+                <ul class="nav pull-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cake">Recipes</a></li>
+                    <li><a href="#review">Review</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- end navbar-->
+
+    <!-- banner area -->
+    <section class="banner-area" id="home" style="padding-top: 80px">
+        <div class="container">
+            <div class="row">
+                <div class="span5">
+                    <h1>Freshly baked and yummy!</h1>
+                    <p>It's not always about decadent desserts and celebrations. Sometimes you're just looking for a down-to-earth sweet treat to satisfy your appetite.</p>
+
+                    <button class="btn btn-info" style="border-radius: 20px; padding: 10px">BUY NOW</button>
+                </div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+    <!-- About what we do -->
+    <section class="about-us-area" id="about" style="padding-top: 50px">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <img src="images/ingredient.jpeg" alt="Ingredient" style="border-radius: 10px">
+                </div>
+
+                <div class="span6">
+                    <br><br>
+                    <h2>About what we do</h2>
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px">We are cake artists with love for creating the sweetest part of your celebration.</p>
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px">It all starts with recipes that are carefully crafted from scratch, a design that perfectly reflects your personality and a team of pastry chefs and cake decorators that are experienced in executing edible masterpieces.</p>
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px">Our aesthetic approach is classic, joyful and always elegant. we believe that details matter. This is your most important day, and we are here to ensure that everyone remembers the cake.</p>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+    <section style="padding-top: 40px; padding-bottom: 40px; margin-top: 20px; background-image: url('images/menu-bg.jpg')">
+        <div class="container">
+            <h2 style="text-align: center">What kind of pastries we deliver</h2>
+            <div class="row">
+                <div class="span4">
+                    <div class="well">
+                        <h4>Pocket Pastries with Raspberry Jam</h4>
+                        <p>Pocket Pastries with Raspberry Jam...</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="well">
+                        <h4>Ham and Spinash Puff Pastries</h4>
+                        <p>Ham and Spinash Puff Pastries...</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="well">
+                        <h4>Vanilla Cream Puff Pastry</h4>
+                        <p>Vanilla Cream Puff Pastry...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span4">
+                    <div class="well">
+                        <h4>Strawberry-Cream Cheese Pastries</h4>
+                        <p>Strawberry-Cream Cheese Pastries...</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="well">
+                        <h4>Chocolate-Orange Pastries</h4>
+                        <p>Chocolate-Orange Pastries...</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="well">
+                        <h4>Raspberry & Cream Cheese Pastries</h4>
+                        <p>Raspberry & Cream Cheese Pastries...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span4">
+                    <div class="well">
+                        <h4>Cheese and Spinash Puff Pastries</h4>
+                        <p>Cheese and Spinash Puff Pastries...</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="well">
+                        <h4>Apple Pie Pastries</h4>
+                        <p>Apple Pie Pastries...</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="well">
+                        <h4>Fruit and Cream Cheese Pastries</h4>
+                        <p>Fruit and Cream Cheese Pastries...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cakes and Pastries display -->
+    <section id="cake" style="padding-top: 70px">
+        <div class="container">
+            <h2 style="text-align: center">Recent Recipes</h2>
+            <div class="row">
+                <div class="span4">
+                    <img src="images/images_14.jpeg" alt="Demo" title="Pastry" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_2.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_3.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="span4">
+                    <img src="images/images_4.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_15.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_6.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="span4">
+                    <img src="images/images_7.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_8.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_9.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="span4">
+                    <img src="images/images_10.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_11.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_12.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="span4">
+                    <img src="images/images_13.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_1.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_5.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="span4">
+                    <img src="images/images_16.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_17.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+
+                <div class="span4">
+                    <img src="images/images_18.jpeg" alt="Demo" class="img-polaroid custom-image-size">
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="review" style="padding: 20px; background-image: url('images/menu-bg.jpg')">
+        <h2>Reviews</h2>
+
+        <div class="carousel slide" id="testimonials">
+            <ol class="carousel-indicators">
+                <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonials" data-slide-to="1"></li>
+                <li data-target="#testimonials" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <blockquote>
+                        <p>I just wanted to let you know that I LOVED the hello kitty cake! It was so delicious!</p>
+                        <p>Thank you!</p>
+                        <small>Michelle</small>
+                    </blockquote>
+                </div>
+
+                <div class="item">
+                    <blockquote>
+                        <p>The cake and cup cakes were a huge success - not one cupcake left behind.</p>
+                        <p>I loved the frosting.</p>
+                        <p>Thank you for the wonderful work you do.</p>
+                        <small>Mary-Jo</small>
+                    </blockquote>
+                </div>
+
+                <div class="item">
+                    <blockquote>
+                        <p>Yummy, yummy pastries. This place is amazing!!</p>
+                        <p>They say: "Variety is the spice of life", and this place has got it. Chocolate is my favorite!! But all flavors look divine. A must visit place for all ages.</p>
+                        <small>John Smith</small>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <!-- end carousel -->
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span4">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" style="width: 250px" placeholder="Enter your email">
+                            <div class="input-group-btn">
+                                <button class="btn btn-info" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="span4">
+                    <a href="">Strawberry-Cream Cheese Pastries</a><br>
+                    <a href="">Pocket Pastries with Raspberry Jam</a><br>
+                    <a href="">Vanilla Cream Puff Pastry</a><br>
+                    <a href="">Ham, Cheese and Spinash Puff Pastries</a><br>
+                    <a href="">Chocolate-Orange Pastries</a><br>
+                </div>
+                <div class="span4">
+                    <a href="">Raspberry & Cream Cheese Pastries</a><br>
+                    <a href="">Fruit and Cream Cheese Breakfast Pastries</a><br>
+                    <a href="">Apple Pie Pastries</a><br>
+                    <a href=""></a><br>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <strong>Follow Us:</strong>
+            <!-- Social media icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <i class="fa fa-phone" aria-hidden="true">+2348165554342</i>
+        </div>
+
+        <p class="text-center muted"> Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            All rights reserved|Cafe
+        </p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                interval: 5000
+            });
+        });
+    </script>
+    <script>
+        let anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+        for (let item of anchorLinks) {
+            item.addEventListener('click', e => {
+                let hashval = item.getAttribute('href');
+                let target = document.querySelector(hashval);
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                history.pushState(null, null, hashval);
+                e.preventDefault();
+            })
+        }
+    </script>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>

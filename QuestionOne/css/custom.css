@@ -1,0 +1,24 @@
+body {
+    padding-top: 3em;
+    background-image: url("../bg.jpg");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#custom-form {
+    padding: 20px;
+    background-color: rgb(151, 116, 116);
+    border-radius: 25px;
+}
+
+.custom-width {
+    width: 300px;
+}
+
+.custom-text {
+    color: white;
+}
